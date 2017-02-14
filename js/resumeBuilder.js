@@ -62,8 +62,8 @@ var work = {
     "display": function() {
         this.jobs.forEach(function(job) {
             $("#workExperience").append(HTMLworkStart);
-            $(".work-entry:last").append(HTMLworkEmployer.replace('%data%', job.employer))
-                .append(HTMLworkTitle.replace('%data%', job.title))
+            $(".work-entry:last")
+                .append(HTMLworkEmployer.replace('%data%', job.employer) + HTMLworkTitle.replace('%data%', job.title))
                 .append(HTMLworkDates.replace('%data%', job.dates))
                 .append(HTMLworkLocation.replace('%data%', job.location))
                 .append(HTMLworkDescription.replace('%data%', job.description));
@@ -114,7 +114,7 @@ var education = {
         {
             "name": "TEI of Athens",
             "location": "Peristeri, Athens, Greece",
-            "degree": "tade",
+            "degree": "BSc",
             "majors":["Information Technology"], 
             "dates": "2016",
             "url": "https://www.teiath.gr"
@@ -122,7 +122,7 @@ var education = {
         {
             "name": "4o lukeio zwgrafou",
             "location": "Ilisia, Athens, Greece",
-            "degree": "tade",
+            "degree": "High school diploma",
             "majors":["psychology"],
             "dates": "2016",
             "url": "https://www.google.gr"
@@ -131,22 +131,22 @@ var education = {
     "onlineCourses": [
         {
             "title": "My first online course",
-            "school": "4o zwgrafou",
+            "school": "Udacity",
             "dates": "2016-2017", 
-            "url": "www.google.gr"
+            "url": "www.udacity.com"
         },
         {
             "title": "My other online course",
-            "school": "4o zwgrafou",
-            "dates": "2016-2017",
-            "url": "www.google.gr"
+            "school": "Lynda",
+            "dates": "2015-2016",
+            "url": "www.lynda.com"
         }
     ],
     "display": function(){
         this.schools.forEach(function(school) {
             $("#education").append(HTMLschoolStart);
-            $(".education-entry:last").append(HTMLschoolName.replace("%data%", school.name))
-                .append(HTMLschoolDegree.replace("%data%", school.degree))
+            $(".education-entry:last")
+                .append(HTMLschoolName.replace("%data%", school.name) + HTMLschoolDegree.replace("%data%", school.degree))
                 .append(HTMLschoolDates.replace("%data%", school.dates))
                 .append(HTMLschoolLocation.replace("%data%", school.location));
 
