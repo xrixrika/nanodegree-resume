@@ -31,7 +31,7 @@ var bio = {
             .append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
 
         $header.append(HTMLskillsStart);
-        
+
         this.skills.forEach(function(skill) {
             $("#skills").append(HTMLskills.replace('%data%', skill));
         });
@@ -43,14 +43,13 @@ var bio = {
  * @type {{jobs: [*], display: work.display}}
  */
 var work = {
-    "jobs": [
-        {
-            "employer": "Sotiria Hospital",
-            "title": "Health Visitor",
-            "location": "Athens",
-            "dates": "2015-2016",
-            "description": "I am a good Health Visitor" 
-        },
+    "jobs": [{
+        "employer": "Sotiria Hospital",
+        "title": "Health Visitor",
+        "location": "Athens",
+        "dates": "2015-2016",
+        "description": "I am a good Health Visitor"
+    },
         {
             "employer": "Web profile",
             "title": "Web developer",
@@ -76,18 +75,17 @@ var work = {
  * @type {{projects: [*], display: projects.display}}
  */
 var projects = {
-    "projects": [
-        {
-            "title": "project1", 
-            "dates": "2017",
-            "description": "A very good project1",
-            "images" : ["images/project.jpg", "images/project.jpg"]
-        },
+    "projects": [{
+        "title": "project1",
+        "dates": "2017",
+        "description": "A very good project1",
+        "images": ["images/project.jpg", "images/project.jpg"]
+    },
         {
             "title": "project2",
             "dates": "2017",
             "description": "A very good project2",
-            "images" : ["images/project.jpg", "images/project.jpg"]
+            "images": ["images/project.jpg", "images/project.jpg"]
         }
     ],
     "display": function() {
@@ -97,7 +95,7 @@ var projects = {
                 .append(HTMLprojectTitle.replace('%data%', project.title))
                 .append(HTMLprojectDates.replace('%data%', project.dates))
                 .append(HTMLprojectDescription.replace('%data%', project.description));
-                
+
             project.images.forEach(function(image) {
                 $(".project-entry:last").append(HTMLprojectImage.replace('%data%', image));
             });
@@ -110,31 +108,29 @@ var projects = {
  * @type {{schools: [*], onlineCourses: [*], display: education.display}}
  */
 var education = {
-    "schools": [
-        {
-            "name": "TEI of Athens",
-            "location": "Peristeri, Athens, Greece",
-            "degree": "BSc",
-            "majors":["Information Technology"], 
-            "dates": "2016",
-            "url": "https://www.teiath.gr"
-        },
+    "schools": [{
+        "name": "TEI of Athens",
+        "location": "Peristeri, Athens, Greece",
+        "degree": "BSc",
+        "majors": ["Information Technology"],
+        "dates": "2016",
+        "url": "https://www.teiath.gr"
+    },
         {
             "name": "4o lukeio zwgrafou",
             "location": "Ilisia, Athens, Greece",
             "degree": "High school diploma",
-            "majors":["psychology"],
+            "majors": ["psychology"],
             "dates": "2016",
             "url": "https://www.google.gr"
         }
     ],
-    "onlineCourses": [
-        {
-            "title": "My first online course",
-            "school": "Udacity",
-            "dates": "2016-2017", 
-            "url": "www.udacity.com"
-        },
+    "onlineCourses": [{
+        "title": "My first online course",
+        "school": "Udacity",
+        "dates": "2016-2017",
+        "url": "www.udacity.com"
+    },
         {
             "title": "My other online course",
             "school": "Lynda",
@@ -142,7 +138,7 @@ var education = {
             "url": "www.lynda.com"
         }
     ],
-    "display": function(){
+    "display": function() {
         this.schools.forEach(function(school) {
             $("#education").append(HTMLschoolStart);
             $(".education-entry:last")
