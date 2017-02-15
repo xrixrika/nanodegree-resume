@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #663399;
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +34,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #663399;
   line-height: 29px;
   padding: 10px;
 }
@@ -42,14 +42,14 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #663399;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4a4a4a;
+  color: #663399;
   line-height: 17px;
 }
 
@@ -73,7 +73,7 @@ h5 {
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
+  color: #663399;
   line-height: 16px;
   float: right;
 
@@ -100,16 +100,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #663399;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #E1C4FE;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #fff;
 }
 
 .white-text {
@@ -118,7 +118,7 @@ a {
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: #eeeeee;
   padding-bottom: 10px;
   clear: both;
 }
@@ -129,7 +129,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background: url(http://wallpapercave.com/wp/uoyx3kz.jpg);
 }
 
 .flex-box {

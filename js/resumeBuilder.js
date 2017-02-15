@@ -1,6 +1,6 @@
 /**
  * Biography information
- * @type {{name: string, role: string, contacts: {mobile: string, email: string, github: string, location: string}, welcomeMessage: string, skills: [*], bioPic: string, display: bio.display}}
+ * @type {{name: string, role: string, contacts: {mobile: string, email: string, github: string, location: string}, welcomeMessage: string, skills: [*], biopic: string, display: bio.display}}
  */
 var bio = {
     "name": "Christina",
@@ -13,7 +13,7 @@ var bio = {
     },
     "welcomeMessage": "Hello to everyone",
     "skills": ["singing", "programming", "teaching", "writing"],
-    "bioPic": "images/fry.jpg",
+    "biopic": "images/fry.jpg",
     "display": function() {
         var $header = $("#header");
         $header
@@ -27,7 +27,7 @@ var bio = {
         }
 
         $header
-            .append(HTMLbioPic.replace('%data%', this.bioPic))
+            .append(HTMLbioPic.replace('%data%', this.biopic))
             .append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
 
         $header.append(HTMLskillsStart);
@@ -79,13 +79,13 @@ var projects = {
         "title": "project1",
         "dates": "2017",
         "description": "A very good project1",
-        "images": ["images/project.jpg", "images/project.jpg"]
+        "images": ["images/ufo.png", "images/rocket.png"]
     },
         {
             "title": "project2",
             "dates": "2017",
             "description": "A very good project2",
-            "images": ["images/project.jpg", "images/project.jpg"]
+            "images": ["images/rocket.png", "images/vial.png"]
         }
     ],
     "display": function() {
